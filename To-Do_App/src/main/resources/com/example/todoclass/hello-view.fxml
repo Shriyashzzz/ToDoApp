@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="309.0" style="-fx-background-color: f0e4e1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <Label alignment="CENTER" layoutX="52.0" layoutY="31.0" prefHeight="38.0" prefWidth="220.0" text="TO-DO LIST" textAlignment="RIGHT" wrapText="true">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.31578946113586426" green="0.2982456088066101" blue="0.2982456088066101" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButto0nClick" layoutX="125.0" layoutY="90.0" mnemonicParsing="false" onAction="#OnAddItemToListClicked" text="ADD TASK" />
+      <ListView fx:id="myTodoList" layoutX="26.0" layoutY="123.0" prefHeight="287.0" prefWidth="269.0" style="-fx-background-color: f0e4e1; -fx-background-image: f0e4e1;" />
+      <ImageView fx:id="thumbs_up_View" fitHeight="90.0" fitWidth="123.0" layoutX="100.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="tasksLabel" alignment="CENTER" layoutX="62.0" layoutY="215.0" prefHeight="17.0" prefWidth="196.0" text="No Tasks For Today Yiphee!" />
+   </children>
+</AnchorPane>
